@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --change: #FF7F50;
+}
+
+
+*{
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+}
+
+.des{
+
+    font-size: 2rem;
+    text-align: center;
+    width: 400px;
+    padding: 20px 10px;
+    margin: 200px auto;
+    border:  20px solid #fff ;
+    border-radius: 10px;
+    transition: all 0.s ease;
+}
+
+/* border animation for description */
+
+@keyframes border-animation {
+    0% {
+        box-shadow: 0 0 0 var(--change);
+    }
+    100%{
+        box-shadow: 0 0 25px var(--change);
+    }
+}
+
+.wrapper{
+   
+    text-align: center;
+    margin-top: 200px; 
+
+}
+
+.btn{
+
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    background-color: #FF7F50;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.15s ease-in-out;
+    
+}
+
+.btn:hover{
+
+    opacity: 0.85;
+
+}
+
+.btn:active{
+
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn.active{
+
+    background-color: purple;
+
+}
